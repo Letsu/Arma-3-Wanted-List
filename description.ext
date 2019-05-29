@@ -2,5 +2,6 @@
 #include "wanted\dialog\dialogHandler.hpp"
 
 class CfgFunctions {
+    #include "common\functions.cpp"
     #include "wanted\functions.cpp"
 };
