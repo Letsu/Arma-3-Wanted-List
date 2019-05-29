@@ -24,4 +24,4 @@ private _DISPLAY    = findDisplay WANTED_DIALOG;
 private _LBWANTED   = _DISPLAY displayCtrl 1009;
 private _data       = _LBWANTED lbData _index;
 
-[_data] call lts_wanted_fnc_listPlayersEntrys;
+[_data] call lts_wanted_fnc_showWantedInfo;

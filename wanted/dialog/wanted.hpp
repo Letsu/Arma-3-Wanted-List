@@ -58,7 +58,7 @@ class wanted {
             y = 0.166357423795477 * safezoneH + safezoneY;
             w = 0.134895833333333 * safezoneW;
             h = 0.344950344149459 * safezoneH;
-            onlbselchanged = "[_this param [1]] call lts_wanted_dialog_fnc_lbWantedChanged"; 
+            onlbselchanged = "[_this param [1]] call lts_wanted_dialog_fnc_lbWantedChanged";
         };
 
         class buttonSearch : Lts_RscButton {
@@ -182,7 +182,7 @@ class wanted {
 
         	class Controls
         	{
-        		class RscStructuredText0 : Lts_RscStructuredText
+        		class wantedText : Lts_RscStructuredText
         		{
         			idc = 1008;
         			colorBackground[] = {1,1,1,0};
