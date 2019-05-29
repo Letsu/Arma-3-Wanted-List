@@ -10,7 +10,7 @@
  * NONE
  *
  * Example:
- * [] call lts_wanted_dialog_fnc_lbPlayersChanged
+ * [0] call lts_wanted_dialog_fnc_lbPlayersChanged
  *
  * Public: Yes
  */
