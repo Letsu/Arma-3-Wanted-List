@@ -4,4 +4,9 @@ class lts_wanted {
         file = "wanted\functions";
         class callWanted {};
     };
+
+    class dialog_functions {
+        file = "wanted\dialog\functions";
+        class lbPLayersChanged {};
+    };
 };
