@@ -2,8 +2,9 @@ class lts_wanted {
     tag = "lts_wanted";
     class functions {
         file = "wanted\functions";
-        class callWanted {};
+        class callWanted        {};
         class listPlayersEntrys {};
+        class showWantedInfo    {};
     };
 };
 
