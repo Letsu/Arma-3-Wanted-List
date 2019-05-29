@@ -26,7 +26,7 @@ params [
     ["_data", [], [[]]]
 ];
 
-/* _data = [[[0, "Was nicht so Cooles"]], []]; //Only Testing */
+_data = [[[0, "Was nicht so Cooles"]], []]; //Only Testing
 
 switch (_type) do {
     case (0): /* Send request to Database */{
@@ -49,11 +49,16 @@ switch (_type) do {
 
         //Fill Wanted List
         {
-            _title  = _x param [1];
-
+            private _title  = _x param [1];
             _LBWANTED lbAdd _title;
-
         } forEach _wantedData;
+
+        //Fill Notes List
+        {
+
+            private _title = _x param [1];
+            _LBNOTE lbAdd _title;
+        } forEach _noteData;
 
 
 
