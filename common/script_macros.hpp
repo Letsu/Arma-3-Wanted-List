@@ -3,6 +3,7 @@
 
 //Functions
 #define LOG(TEXT) [TEXT] call lts_common_fnc_log
+#define HINTMSG(TEXT) [TEXT] call lts_common_fnc_hint
 
 
 //Dialogs

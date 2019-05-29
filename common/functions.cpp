@@ -3,5 +3,6 @@ class lts_copmmon {
     class functions {
         file = "common\functions";
         class log {};
+        class hint {};
     };
 };
