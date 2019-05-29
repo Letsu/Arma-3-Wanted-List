@@ -59,7 +59,7 @@ switch (_type) do {
 
         //Fill Notes List
         {
-            private _title = _x param [1];
+            private _title = SEl(_x, 1);
             _LBNOTE lbAdd _title;
             _LBNOTE lbSetData [(lbSize _LBNOTE)-1, str(_x)];
         } forEach _noteData;
