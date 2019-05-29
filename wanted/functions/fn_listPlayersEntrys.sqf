@@ -47,7 +47,9 @@ switch (_type) do {
         private _wantedData = _data param [0];
         private _noteData   = _data param [1];
 
-        //Fill Wanted List
+        //Clear & Fill Wanted List
+        lbClear _LBWANTED;
+        lbClear _LBNOTE;
         {
             private _title  = _x param [1];
             _LBWANTED lbAdd _title;
