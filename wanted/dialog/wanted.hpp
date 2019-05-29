@@ -49,7 +49,7 @@ class wanted {
             y = 0.214413632251721 * safezoneH + safezoneY;
             w = 0.110416666666667 * safezoneW;
             h = 0.605645364798426 * safezoneH;
-            onlbselchanged = "[_this param [1]] call lts_wanted_dialog_fnc_lbPlayersChanged";
+            onlbselchanged = "[SEL(_this, 1)] call lts_wanted_dialog_fnc_lbPlayersChanged";
         };
 
         class listWantedEntrys : Lts_RscListBox {

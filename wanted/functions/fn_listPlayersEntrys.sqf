@@ -52,14 +52,14 @@ switch (_type) do {
         lbClear _LBNOTE;
         //Fill Wanted List
         {
-            private _title  = SEL(_x, 1);
+            private _title = SEL(_x, 1);
             _LBWANTED lbAdd _title;
             _LBWANTED lbSetData [(lbSize _LBWANTED)-1, str(_x)];
         } forEach _wantedData;
 
         //Fill Notes List
         {
-            private _title = SEl(_x, 1);
+            private _title = SEL(_x, 1);
             _LBNOTE lbAdd _title;
             _LBNOTE lbSetData [(lbSize _LBNOTE)-1, str(_x)];
         } forEach _noteData;
