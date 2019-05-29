@@ -1,1 +1,2 @@
+#include "common\dialog\common.hpp"
 #include "wanted\dialog\dialogHandler.hpp"
