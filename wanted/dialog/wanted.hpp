@@ -49,7 +49,7 @@ class wanted {
             y = 0.214413632251721 * safezoneH + safezoneY;
             w = 0.110416666666667 * safezoneW;
             h = 0.605645364798426 * safezoneH;
-            /* onlbselchanged = "call lts_dialog_fnc_onPlayerWantedChange"; */
+            onlbselchanged = "[_this param [1]] call lts_wanted_dialog_fnc_lbPlayersChanged";
         };
 
         class listWantedEntrys : Lts_RscListBox {
@@ -127,7 +127,7 @@ class wanted {
             text = "Info Entfernen";
         };
 
-        class RscListBox3 : Lts_RscListBox {
+        class LISTNOTE : Lts_RscListBox {
             idc = 1013;
             x = 0.4109375 * safezoneW + safezoneX;
             y = 0.53338249754179 * safezoneH + safezoneY;

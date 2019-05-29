@@ -5,9 +5,12 @@ class lts_wanted {
         class callWanted {};
         class listPlayersEntrys {};
     };
+};
 
+class lts_wanted_dialog {
+    tag = "lts_wanted_dialog"
     class dialog_functions {
         file = "wanted\dialog\functions";
-        class lbPLayersChanged {};
+        class lbPlayersChanged {};
     };
-};
+}
