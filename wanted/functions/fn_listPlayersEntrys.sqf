@@ -50,6 +50,7 @@ switch (_type) do {
         //Clear & Fill Wanted List
         lbClear _LBWANTED;
         lbClear _LBNOTE;
+        //Fill Wanted List
         {
             private _title  = SEL(_x, 1);
             _LBWANTED lbAdd _title;
