@@ -58,7 +58,7 @@ class wanted {
             y = 0.166357423795477 * safezoneH + safezoneY;
             w = 0.134895833333333 * safezoneW;
             h = 0.344950344149459 * safezoneH;
-            /* onlbselchanged = "call lts_dialog_fnc_onWantedWantedChange"; */
+            onlbselchanged = "[_this param [1]] call lts_wanted_dialog_fnc_lbWantedChanged"; 
         };
 
         class buttonSearch : Lts_RscButton {
