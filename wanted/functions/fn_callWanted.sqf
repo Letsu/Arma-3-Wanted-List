@@ -15,6 +15,16 @@
  * Public: Yes
  */
 
-waitUntil {!isNull (findDisplay 46)};
-
+//Open Dialog
+waitUntil {!isNull (findDisplay ARMA_GAMESCREEN)};
 createDialog "wanted";
+waitUntil {!isNull (findDisplay WANTED_DIALOG)};
+
+//Fill Data
+_DISPLAY = findDisplay WANTED_DIALOG;
+_LBPLAYERS = _DISPLAY displayCtrl 1003;
+
+{
+    _LBPLAYERS lbAdd (name _x);
+    _LBPLAYERS lbSetData [lbSize _LBPLAYERS, getPlayerUID _x]
+} forEach allPlayers;

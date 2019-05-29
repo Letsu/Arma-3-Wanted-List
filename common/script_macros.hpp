@@ -1,2 +1,3 @@
+//Dialogs
 #define ARMA_GAMESCREEN 46
 #define ARMA_ESCSCREEN 49

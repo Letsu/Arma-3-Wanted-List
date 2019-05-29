@@ -49,7 +49,7 @@ class wanted {
             y = 0.214413632251721 * safezoneH + safezoneY;
             w = 0.110416666666667 * safezoneW;
             h = 0.605645364798426 * safezoneH;
-            onlbselchanged = "call lts_dialog_fnc_onPlayerWantedChange";
+            /* onlbselchanged = "call lts_dialog_fnc_onPlayerWantedChange"; */
         };
 
         class listWantedEntrys : Lts_RscListBox {
@@ -58,7 +58,7 @@ class wanted {
             y = 0.166357423795477 * safezoneH + safezoneY;
             w = 0.134895833333333 * safezoneW;
             h = 0.344950344149459 * safezoneH;
-            onlbselchanged = "call lts_dialog_fnc_onWantedWantedChange";
+            /* onlbselchanged = "call lts_dialog_fnc_onWantedWantedChange"; */
         };
 
         class buttonSearch : Lts_RscButton {
@@ -150,15 +150,15 @@ class wanted {
             w = 0.095589 * safezoneW;
         };
         //TEST!!!!!
-        class My_RscControlsgroup
+        class wantedContent : Lts_RscControlsGroup
         {
         	type = 15;
         	idc = -1;
         	style = 0;
-         x = 0.55625 * safezoneW + safezoneX;
-         y = 0.166357423795477 * safezoneH + safezoneY;
-         h = 0.344950344149459 * safezoneH;
-         w = 0.266145833333334 * safezoneW;
+             x = 0.55625 * safezoneW + safezoneX;
+             y = 0.166357423795477 * safezoneH + safezoneY;
+             h = 0.344950344149459 * safezoneH;
+             w = 0.266145833333334 * safezoneW;
 
         	class VScrollbar
         	{
