@@ -12,5 +12,6 @@ class lts_wanted_dialog {
     class dialog_functions {
         file = "wanted\dialog\functions";
         class lbPlayersChanged {};
+        class lbWantedChanged  {};
     };
 }
