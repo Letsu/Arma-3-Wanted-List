@@ -33,15 +33,9 @@ if (count _data isEqualTo 0) then {
     { _billTotal = _billTotal + (SEL(_x,8)) } forEach _data;
 };
 
-
-
 private _text = format["
-Name: <br/>
-%1 <br/>
-Status: <br/>
-%2 <br/>
-Gesammt Strafgeld: <br/>
-%3 <br/>
+Name: <br/> %1 <br/>
+Status: <br/> %2 <br/>
+Gesammt Strafgeld: <br/> %3 <br/>
 ", _name, _state, _billTotal];
-
 _PLAYERINFO ctrlSetStructuredText (parseText _text);
