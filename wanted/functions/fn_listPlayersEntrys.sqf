@@ -44,14 +44,14 @@ switch (_type) do {
         private _LBNOTE     = _DISPLAY displayCtrl 1013;
 
         //Split Data from Database
-        private _wantedData = _data param [0];
-        private _noteData   = _data param [1];
+        private _wantedData = SEL(_data, 0);
+        private _noteData   = SEL(_data, 1);
 
         //Clear & Fill Wanted List
         lbClear _LBWANTED;
         lbClear _LBNOTE;
         {
-            private _title  = _x param [1];
+            private _title  = SEL(_x, 1);
             _LBWANTED lbAdd _title;
             _LBWANTED lbSetData [(lbSize _LBWANTED)-1, str(_x)];
         } forEach _wantedData;
