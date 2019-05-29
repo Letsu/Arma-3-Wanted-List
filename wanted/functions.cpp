@@ -5,6 +5,7 @@ class lts_wanted {
         class callWanted        {};
         class listPlayersEntrys {};
         class showWantedInfo    {};
+        class showPlayerInfo    {};
     };
 };
 

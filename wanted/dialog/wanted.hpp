@@ -135,7 +135,7 @@ class wanted {
             h = 0.385004916420846 * safezoneH;
         };
 
-        class RscStructuredText1 : Lts_RscStructuredText {
+        class noteTextBox : Lts_RscStructuredText {
             idc = 1014;
             x = 0.5546875 * safezoneW + safezoneX;
             y = 0.53338249754179 * safezoneH + safezoneY;
