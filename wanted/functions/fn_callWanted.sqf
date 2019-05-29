@@ -25,7 +25,7 @@ private _DISPLAY    = findDisplay WANTED_DIALOG;
 private _LBPLAYERS  = _DISPLAY displayCtrl 1003;
 {
     _LBPLAYERS lbAdd (name _x);
-    _LBPLAYERS lbSetData [lbSize _LBPLAYERS, getPlayerUID _x]
+    _LBPLAYERS lbSetData [(lbSize _LBPLAYERS)-1, getPlayerUID _x]
 } forEach allPlayers;
 
 //Disable Buttons that are note used a.t.m.

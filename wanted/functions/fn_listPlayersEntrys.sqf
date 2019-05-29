@@ -26,6 +26,8 @@ params [
     ["_data", [], [[]]]
 ];
 
+/* _data = [[[0, "Was nicht so Cooles"]], []]; //Only Testing */
+
 switch (_type) do {
     case (0): /* Send request to Database */{
         //Send Database Request
@@ -35,6 +37,23 @@ switch (_type) do {
         //Check if Data is valied
         if ((count _data) isEqualTo 0)  exitWith { LOG("Empty Data Array Passed to Wanted List") };
         if (_data isEqualTo [])         exitWith { LOG("Empty Data Array Passed to Wanted List") };
+
+        //Add Data to Listboxes
+        private _DISPLAY    = findDisplay WANTED_DIALOG;
+        private _LBWANTED   = _DISPLAY displayCtrl 1009;
+        private _LBNOTE     = _DISPLAY displayCtrl 1013;
+
+        //Split Data from Database
+        private _wantedData = _data param [0];
+        private _noteData   = _data param [1];
+
+        //Fill Wanted List
+        {
+            _title  = _x param [1];
+
+            _LBWANTED lbAdd _title;
+
+        } forEach _wantedData;
 
 
 
