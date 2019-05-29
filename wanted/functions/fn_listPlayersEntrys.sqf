@@ -26,7 +26,7 @@ params [
     ["_data", [], [[]]]
 ];
 
-_data = [[[0, "Was nicht so Cooles"]], []]; //Only Testing
+_data = [[[0, "Was nicht so Cooles", "PID", "Player Name", "Cop PID", "Cop Name", "Time", "Description"]], []]; //Only Testing
 
 switch (_type) do {
     case (0): /* Send request to Database */{
