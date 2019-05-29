@@ -15,7 +15,7 @@
  * Public: Yes
  */
 
- params [
+params [
     ["_index", 0, [0]]
 ];
 
