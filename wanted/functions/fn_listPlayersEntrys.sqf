@@ -51,6 +51,7 @@ switch (_type) do {
         {
             private _title  = _x param [1];
             _LBWANTED lbAdd _title;
+            _LBWANTED lbSetData [(lbSize _LBWANTED)-1, _x];
         } forEach _wantedData;
 
         //Fill Notes List
