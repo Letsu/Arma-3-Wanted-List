@@ -207,13 +207,13 @@ class wanted {
         //TEST!!!!
 
 
-        class RscEdit0 : Lts_RscEdit {
+        class editSearch : Lts_RscEdit {
             idc = 1004;
             x = 0.1890625 * safezoneW + safezoneX;
             y = 0.887571288102262 * safezoneH + safezoneY;
             h = 0.039216 * safezoneH;
             w = 0.0911458333333333 * safezoneW;
-            text = "Funktion Deaktieviert";
+            text = "Funktion Nicht Verfügbar";
         };
     };
 };
