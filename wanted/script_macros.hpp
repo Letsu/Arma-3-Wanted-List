@@ -1,3 +1,3 @@
 #include "..\common\script_macros.hpp"
 
-#define WANTED_DIALOG 12201901001
+#define WANTED_DIALOG 2090101
