@@ -19,4 +19,4 @@ class lts_wanted_dialog {
         class lbPlayersChanged {};
         class lbWantedChanged  {};
     };
-}
+};
