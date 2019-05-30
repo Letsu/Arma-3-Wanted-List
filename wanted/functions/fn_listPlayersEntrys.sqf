@@ -26,7 +26,7 @@ params [
     ["_data", [], [[]]]
 ];
 
-_data = [[[0, "Was nicht so Cooles", "PID", "Player Name", "Cop PID", "Cop Name", "Time", "Description", 1213]], [[1, "Ist Böse", "PID", "PLayer Name", "Cop PID", "Cop Name", "Time", "Description"]]]; //Only Testing
+_data = [[[0, "Was nicht so Cooles", "PID", "Player Name", "Cop PID", "Cop Name", "Time", "Description", 1213, 0]], [[1, "Ist Böse", "PID", "PLayer Name", "Cop PID", "Cop Name", "Time", "Description"]], [[0, "Was nicht so Cooles2", "PID", "Player Name", "Cop PID", "Cop Name", "Time", "Description", 1213, 1]]]; //Only Testing
 
 switch (_type) do {
     case (0): /* Send request to Database */{
@@ -46,6 +46,7 @@ switch (_type) do {
         //Split Data from Database
         private _wantedData = SEL(_data, 0);
         private _noteData   = SEL(_data, 1);
+        private _oldWanted  = SEL(_data, 2);
         [_wantedData] spawn lts_wanted_fnc_showPlayerInfo; //Add Basic Information about the Player
 
         //Clear & Fill Wanted List
@@ -57,6 +58,14 @@ switch (_type) do {
             _LBWANTED lbAdd _title;
             _LBWANTED lbSetData [(lbSize _LBWANTED)-1, str(_x)];
         } forEach _wantedData;
+
+        //Add all old at the end
+        {
+            private _title = SEL(_x, 1);
+            private _text = formatText["<t color=""#ff0000"">%1</t>", _title];
+            _LBWANTED lbAdd _title;
+            _LBWANTED lbSetData [(lbSize _LBWANTED)-1, str(_x)];
+        } forEach _oldWanted;
 
         //Fill Notes List
         [] call lts_wanted_fnc_showDefaultNotes;
