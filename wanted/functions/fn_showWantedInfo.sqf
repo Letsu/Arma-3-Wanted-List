@@ -28,7 +28,7 @@ Gesucht wird %4 wegen: <br/>
 <t size='1.3'>%1</t><br/>
 %5<br/>
 <br/>
-Strafe: %6
+Strafe: %6$
 ", SEL(_data, 1), SEL(_data, 5), SEL(_data, 6), SEL(_data, 3), SEL(_data, 7), SEL(_data, 8)];
 
 _WANTEDTEXT ctrlSetStructuredText (parseText _text)
