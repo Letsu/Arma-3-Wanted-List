@@ -28,6 +28,8 @@ private _LBPLAYERS  = _DISPLAY displayCtrl 1003;
     _LBPLAYERS lbSetData [(lbSize _LBPLAYERS)-1, getPlayerUID _x]
 } forEach allPlayers;
 
+_LBPLAYERS lbSetCurSel 0;
+
 //Disable Buttons that are note used a.t.m.
 private _BUTTONSEARCH   = _DISPLAY displayCtrl 1007;
 private _BUTTONADDNOTE  = _DISPLAY displayCtrl 1015;
