@@ -61,8 +61,7 @@ switch (_type) do {
 
         //Add all old at the end
         {
-            private _title = SEL(_x, 1);
-            private _text = formatText["<t color=""#ff0000"">%1</t>", _title];
+            private _title = format["Alt: %1",SEL(_x, 1)];
             _LBWANTED lbAdd _title;
             _LBWANTED lbSetData [(lbSize _LBWANTED)-1, str(_x)];
         } forEach _oldWanted;
