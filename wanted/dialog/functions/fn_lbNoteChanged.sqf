@@ -22,5 +22,3 @@
  private _DISPLAY    = findDisplay WANTED_DIALOG;
  private _LBNOTES    = _DISPLAY displayCtrl 1013;
  private _data       = _LBNOTES lbData _index;
-
-LOG(str(_data));
