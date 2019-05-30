@@ -67,7 +67,8 @@ switch (_type) do {
         } forEach _oldWanted;
 
         //Fill Notes List
-        [] call lts_wanted_fnc_showDefaultNotes; //Add some Default Entrys
+        [_data, 1] call lts_wanted_fnc_showDefaultNotes; //Only for DBUG
+        /* [_data] call lts_wanted_fnc_showDefaultNotes; //Add some Default Entrys */
         {
             private _title = SEL(_x, 1);
             _LBNOTE lbAdd _title;

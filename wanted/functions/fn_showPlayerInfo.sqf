@@ -37,7 +37,6 @@ private _text = format["
 Name: <br/>%1 <br/>
 Status: <br/>%2 <br/>
 Gesammt Strafgeld: <br/>%3$ <br/>
-Straftaten:<br/>
-%4
+Straftaten:<br/>%4<br/>
 ", _name, _state, _billTotal, count _data];
 _PLAYERINFO ctrlSetStructuredText (parseText _text);
