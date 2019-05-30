@@ -22,8 +22,8 @@ private _WANTEDTEXT = _DISPLAY displayCtrl 1008;
 _data = parseSimpleArray _data;
 
 //Check if Wanted is Active
-private _isActive = "<t color=""#ff0000"">Entlastet</t>";
-if (SEL(_data, 9) isEqualTo 0) then { _isActive = "<t color=""#00ff00"">Gesucht</t>" };
+private _isActive = "<t color=""#00ff00"">Entlastet</t>";
+if (SEL(_data, 9) isEqualTo 0) then { _isActive = "<t color=""#ff0000"">Gesucht</t>" };
 
 private _text = format ["
 <t size='2.0'>%1</t><br/>
