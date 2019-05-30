@@ -59,6 +59,7 @@ switch (_type) do {
         } forEach _wantedData;
 
         //Fill Notes List
+        [] call lts_wanted_fnc_showDefaultNotes;
         {
             private _title = SEL(_x, 1);
             _LBNOTE lbAdd _title;

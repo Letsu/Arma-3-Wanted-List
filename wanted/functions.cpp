@@ -7,6 +7,7 @@ class lts_wanted {
         class showWantedInfo    {};
         class showPlayerInfo    {};
         class showNoteInfo      {};
+        class showDefaultNotes  {};
     };
 };
 
