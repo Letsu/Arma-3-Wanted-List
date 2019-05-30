@@ -6,6 +6,7 @@ class lts_wanted {
         class listPlayersEntrys {};
         class showWantedInfo    {};
         class showPlayerInfo    {};
+        class showNoteInfo      {};
     };
 };
 
