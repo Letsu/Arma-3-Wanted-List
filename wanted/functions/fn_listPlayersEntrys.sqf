@@ -59,7 +59,7 @@ switch (_type) do {
             _LBWANTED lbSetData [(lbSize _LBWANTED)-1, str(_x)];
         } forEach _wantedData;
 
-        //Add all old at the end
+        //Add all old Wanted Entrys at the end of the LB
         {
             private _title = format["Alt: %1",SEL(_x, 1)];
             _LBWANTED lbAdd _title;
@@ -67,7 +67,7 @@ switch (_type) do {
         } forEach _oldWanted;
 
         //Fill Notes List
-        [] call lts_wanted_fnc_showDefaultNotes;
+        [] call lts_wanted_fnc_showDefaultNotes; //Add some Default Entrys
         {
             private _title = SEL(_x, 1);
             _LBNOTE lbAdd _title;
