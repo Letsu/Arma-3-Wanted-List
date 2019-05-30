@@ -127,12 +127,13 @@ class wanted {
             text = "Info Entfernen";
         };
 
-        class LISTNOTE : Lts_RscListBox {
+        class noteListBox : Lts_RscListBox {
             idc = 1013;
             x = 0.4109375 * safezoneW + safezoneX;
             y = 0.53338249754179 * safezoneH + safezoneY;
             w = 0.134895833333333 * safezoneW;
             h = 0.385004916420846 * safezoneH;
+            onlbselchanged = "[_this param [1]] call lts_wanted_dialog_fnc_lbNoteChanged";
         };
 
         class noteTextBox : Lts_RscStructuredText {
