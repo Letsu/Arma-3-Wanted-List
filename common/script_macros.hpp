@@ -1,6 +1,11 @@
 //DBUG
 #define LTS_DBUG
 
+//Core  Informations
+#define VERSION 0.1.0
+#define PREFIX lts
+
+
 //Functions
 #define LOG(TEXT) [TEXT] call lts_common_fnc_log
 #define HINTMSG(TEXT) [TEXT] call lts_common_fnc_hint
