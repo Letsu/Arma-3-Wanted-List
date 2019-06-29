@@ -12,7 +12,7 @@ class wantedAdd {
    enablesimulation = 0;
    class controlsBackground
    {
-       class RscText0 : RscText
+       class RscText0 : Lts_RscText
        {
            idc = 1000;
            colorbackground[] = {0,0,0,0.6};
@@ -22,7 +22,7 @@ class wantedAdd {
            w = 0.327604166666667 * safezoneW;
        };
 
-       class RscText1 : RscText
+       class RscText1 : Lts_RscText
        {
            idc = 1001;
            text = "Title:";
@@ -32,7 +32,7 @@ class wantedAdd {
            w = 0.0765625 * safezoneW;
        };
 
-       class RscText2 : RscText
+       class RscText2 : Lts_RscText
        {
            idc = 1003;
            text = "Beschriebung:";
@@ -42,7 +42,7 @@ class wantedAdd {
            w = 0.0682291666666667 * safezoneW;
        };
 
-       class RscText3 : RscText
+       class RscText3 : Lts_RscText
        {
            idc = 1005;
            text = "Strafgeld:";
@@ -55,7 +55,7 @@ class wantedAdd {
 
    class controls
    {
-       class RscEdit0 : RscEdit
+       class RscEdit0 : Lts_RscEdit
        {
            x = 0.377083333333333 * safezoneW + safezoneX;
            y = 0.333515732546706 * safezoneH + safezoneY;
@@ -63,7 +63,7 @@ class wantedAdd {
            w = 0.283854166666667 * safezoneW;
            idc = 1002;
        };
-       class RscEdit1 : RscEdit
+       class RscEdit1 : Lts_RscEdit
        {
            x = 0.352083333333333 * safezoneW + safezoneX;
            y = 0.413628318584071 * safezoneH + safezoneY;
@@ -71,7 +71,7 @@ class wantedAdd {
            w = 0.305729166666667 * safezoneW;
            idc = 1004;
        };
-       class RscEdit2 : RscEdit
+       class RscEdit2 : Lts_RscEdit
        {
            x = 0.394791666666667 * safezoneW + safezoneX;
            y = 0.626534414945919 * safezoneH + safezoneY;
@@ -79,7 +79,7 @@ class wantedAdd {
            w = 0.175520833333333 * safezoneW;
            idc = 1006;
        };
-       class RscButton0 : RscButton
+       class RscButton0 : Lts_RscButton
        {
            text = "Senden";
            x = 0.591788833333333 * safezoneW + safezoneX;
