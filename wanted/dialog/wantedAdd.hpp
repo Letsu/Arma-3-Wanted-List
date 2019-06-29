@@ -87,7 +87,7 @@ class wantedAdd {
            w = 0.0665445000000001 * safezoneW;
            h = 0.037 * safezoneH;
            idc = 1007;
-           action = "call lts_dialog_fnc_wantedAdd";
+           action = "call lts_wanted_dialog_fnc_addWantedAddButtonPressed";
        };
    };
 };

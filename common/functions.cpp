@@ -2,7 +2,7 @@ class lts_copmmon {
     tag = "lts_common";
     class functions {
         file = "common\functions";
-        class log {};
-        class hint {};
+        class log           {};
+        class hint          {};
     };
 };
