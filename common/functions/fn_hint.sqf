@@ -15,7 +15,7 @@
  * Public: Yes
  */
 
-param [
+params [
     ["_message", "ERROR", [""]]
 ];
 
