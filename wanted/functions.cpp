@@ -26,8 +26,9 @@ class lts_wanted_dialog {
     tag = "lts_wanted_dialog";
     class dialog_functions {
         file = "wanted\dialog\functions";
-        class lbNoteChanged    {};
-        class lbPlayersChanged {};
-        class lbWantedChanged  {};
+        class lbNoteChanged             {};
+        class lbPlayersChanged          {};
+        class lbWantedChanged           {};
+        class wantedAddButtonPressed    {};
     };
 };
